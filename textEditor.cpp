@@ -10,7 +10,7 @@ int main()
     std::cout << "Please Enter the filename (example.txt)" << std::endl << ": ";
     std::getline(std::cin, fileName);
 
-    file.open(fileName);
+    file.open(fileName, std::ios_base::app);
     std::cout << fileName << " opened" << std::endl << ": ";
     std::getline(std::cin, input);
 
